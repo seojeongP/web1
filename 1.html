@@ -3,41 +3,86 @@
   <head>
     <title>Caerang Team.deeplearning</title>
     <meta charset="utf-8">
+    <style>
+      h1 {
+        border-bottom:2px solid gray;
+        padding:15px;
+        margin-top:5;
+        margin-bottom:0;
+        font-size:60px;
+        text-align: center;
+      }
+      a {
+        color:black;
+        text-decoration:none;
+      }
+      #grid {
+        display:grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #grid ol{
+        margin:0;
+        border-right:2px solid gray;
+        padding-top:20px;
+      }
+      #grid div{
+        padding-left: 20px;
+      }
+    </style>
   </head>
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="1.html">1학기 재학생 교육</a></li>
-      <li><a href="2.html">하계 워크샵</a></li>
-      <li><a href="3.html">소프트웨어 전시회</a></li>
-    </ol>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">1학기 재학생 교육</a></li>
+        <li><a href="2.html" class="saw">하계 워크샵</a></li>
+        <li><a href="3.html" class="saw">소프트웨어 전시회</a></li>
+      </ol>
 
-    <h2>1학기 재학생 교육</h2>
+      <div>
+        <h2>1학기 재학생 교육</h2>
 
-    <strong>1학기 재학생 교육</strong>은
-    <a href="https://sw.hallym.ac.kr/index.php?mp=6_3"
-    target="_blank" title="hallym software homepage">
-      C-aerang</a> 동아리의 신입생이라면 처음으로 하는 동아리 활동이다.<br>
-    각 팀의 기초 내용을 조금씩 배우며 학교에 적응하는 시간이다.<br>
-    딥러닝팀의 경우 재학생 교육으로 딥러닝의 아주 기초적인 내용을 가르친다.<br>
-    perceptron(퍼셉트론)부터 시작하여 forward(순방향) 진행을 이해한다.<br>
-    또한 신경망 구조를 이해하며 이 이론이 가져다주는 큰 이점을 이해한다.<br>
+        <strong>1학기 재학생 교육</strong>은
+        <a href="https://sw.hallym.ac.kr/index.php?mp=6_3"
+        target="_blank" title="hallym software homepage">
+          C-aerang</a> 동아리의 신입생이라면 처음으로 하는 동아리 활동이다.<br>
+        각 팀의 기초 내용을 조금씩 배우며 학교에 적응하는 시간이다.<br>
+        딥러닝팀의 경우 재학생 교육으로 딥러닝의 아주 기초적인 내용을 가르친다.<br>
+        perceptron(퍼셉트론)부터 시작하여 forward(순방향) 진행을 이해한다.<br>
+        또한 신경망 구조를 이해하며 이 이론이 가져다주는 큰 이점을 이해한다.<br>
 
-    <p>특히 이번 딥러닝팀의 재학생 교육은 마냥 1학년을 대상으로 하지 않는다.<br>
-      2,3학년이 주를 이루며 모두 같이 성장하는 팀이라고 할 수 있다.<br>
-      또, 복수전공생도 다수 차지한다.<br>
-      </p>
+        <p>특히 이번 딥러닝팀의 재학생 교육은 마냥 1학년을 대상으로 하지 않는다.<br>
+          2,3학년이 주를 이루며 모두 같이 성장하는 팀이라고 할 수 있다.<br>
+          또, 복수전공생도 다수 차지한다.<br>
+          </p>
 
-    <img src="coding.jpg" width="50%">
+        <img src="presentation.jpg" width="50%">
+      </div>
+    </div>
 
-    <p>
-      오늘 (6.25) 웹 공부를 본격적으로 시작했다.<br>
-      가장 먼저 html이 필요한 이유와 공부를 할 때 갖추어야 할
-      마음가짐에 대한 이야기를 했다.<br>
-      또한 html에서 가장 중요하다고 할 수 있는 <strong><u>tag</u></strong>에
-      대해 배웠는데<br>
-      기능별 tag를 잘 정리해두어야겠다.
-      </p>
+      <p>
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://team-deeplearning.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </p>
+
   </body>
 </html>
